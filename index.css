@@ -35,4 +35,20 @@
     --slogans: 57;
 }
 
+.scroll-watcher{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 1vh;
+    background-color: var(--logowg); /* go define it later */
+    opacity: 0.5;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
 
+@keyframes scroll-watcher {
+    to { scale: 1 1; }
+}
