@@ -139,7 +139,7 @@ footer {
     padding: 5vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-    grid-template-rows: repeat(auto-fit, 4vh);
+    grid-template-rows: repeat(auto-fit, minmax(10%, 90%));
     row-gap: 1vw;
     text-wrap: wrap;
     text-align: center;
