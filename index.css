@@ -11,28 +11,40 @@
 }
 
 :root{
-    /* logo light blue */
-    --logol: #2b4e61;
-    /* Gradient dark*/
-    --grad1: #4d6c93;
+    /* Gradient dark */
+    --gradd: #4d6c93;
     /* The light gradient color btw */
-    --grad2: #7597c0;
+    --gradl: #7597c0;
     /* The whites */
-    --logow: #fbfaff;
-    /* logo dark balck*/
-    --logod: #2e2e2e;
-    /* Slide blue */
-    --slidesb: #90aecc;
-    /* for scrolling */
-    --logowg: #9c9c9e;
-    /* for the wave keyframe*/
+    --offwhite: #fbfaff;
+    /* Grey */
+    --grey: #9c9c9e;
+    /* dark balck */
+    --offblack: #2e2e2e;
+    /* I don't really like this color */
+    --darkturquoise: #1b323e;
+    /* for the wave keyframe */
     --transitions: #426490;
-    /* Gear color*/
-    --gear: #1b323e;
     /* Fonts */
     --sloganf: Libre Franklin;
     --backupfont: Verdana;
     --slogans: 57;
+}
+
+header{
+    background-color: var(--offwhite);
+}
+
+body{
+    background-image: linear-gradient(to right, var(--gradd), var(--gradl), var(--gradd));
+    margin: 0;
+    font-family: 'Libre Franklin', Verdana;
+    text-wrap: wrap;
+    font-size: 1.25vw;
+}
+
+footer{
+    background-color: var(--offwhite);
 }
 
 .scroll-watcher{
@@ -40,7 +52,7 @@
     top: 0;
     z-index: 1000;
     height: 1vh;
-    background-color: var(--logowg); /* go define it later */
+    background-color: var(--grey); /* go define it later */
     opacity: 0.5;
     width: 100%;
     scale: 0 1;
@@ -52,3 +64,4 @@
 @keyframes scroll-watcher {
     to { scale: 1 1; }
 }
+
