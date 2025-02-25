@@ -61,13 +61,20 @@ header{
     to { scale: 1 1; }
 }
 
-.link{
+.container {
+    background: var(--offwhite);
+    margin: 15%;
+    padding: 15%;
+    border-radius: 15%;
+}
+
+.link {
     color: var(--offblack);
     text-decoration: none;
     animation: links;
 }
 
-.link::before, .link::after{
+.link::before, .link::after {
     display: block;
     content: "";
     background-color: var(--offblack);
@@ -77,17 +84,17 @@ header{
     opacity: 0;
 }
 
-.link:hover::before, .link:hover::after{
+.link:hover::before, .link:hover::after {
     animation: linkline 1s ease-in-out forwards;
     transform-origin: center;
 }
 
-@keyframes linkline{
+@keyframes linkline {
     0% {opacity: 0; width: 0%;}
     100% {opacity: 1; width: 100%;}
 }
 
-.float{
+.float {
     position: fixed;
     z-index: 999;
     background-color: var(--logow);
@@ -103,12 +110,12 @@ header{
     transform: translate(-50%, -50%); /* Center the cube */
 }
 
-.hidden{
+.hidden {
     opacity: 0;
     display: none;
 }
 
-#globalf{
+#globalf {
     padding: 5%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
@@ -116,7 +123,7 @@ header{
     row-gap: 15vw;
 }
 
-.footer{
+.footer {
     display: block;
     margin: auto;
     padding: auto;
@@ -124,7 +131,7 @@ header{
     text-align: center;
 }
 
-footer{
+footer {
     background-color: var(--offwhite);
     padding: 5%;
     display: grid;
