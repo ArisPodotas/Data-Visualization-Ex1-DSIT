@@ -61,11 +61,22 @@ header{
     to { scale: 1 1; }
 }
 
+.tab {
+    padding: 1vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(1vh, 4vh));
+    text-align: center;
+}
+
 .container {
     background: var(--offwhite);
-    margin: 15%;
-    padding: 15%;
-    border-radius: 15%;
+    margin: 10%;
+    padding: 10%;
+    border: 1vh;
+    border-radius: 5vw 20vw 10vw 20vw;
+    text-wrap: wrap;
+    text-align: center;
 }
 
 .link {
@@ -110,33 +121,27 @@ header{
     transform: translate(-50%, -50%); /* Center the cube */
 }
 
+.cube{
+    width: 1.5vw;
+}
+
 .hidden {
     opacity: 0;
     display: none;
 }
 
-#globalf {
-    padding: 5%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(80px, 190px));
-    row-gap: 15vw;
-}
-
-.footer {
-    display: block;
-    margin: auto;
-    padding: auto;
-    text-wrap: wrap;
-    text-align: center;
+.btn {
+    background-color:var(--offwhite)
 }
 
 footer {
     background-color: var(--offwhite);
-    padding: 5%;
+    padding: 5vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(80px, 190px));
-    row-gap: 15vw;
+    grid-template-rows: repeat(auto-fit, 4vh);
+    row-gap: 1vw;
+    text-wrap: wrap;
+    text-align: center;
 }
 
