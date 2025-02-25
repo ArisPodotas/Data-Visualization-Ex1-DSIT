@@ -74,9 +74,35 @@ header{
     margin: 10%;
     padding: 10%;
     border: 1vh;
-    border-radius: 5vw 20vw 10vw 20vw;
+    border-radius: 2vw 20vw 10vw 20vw;
     text-wrap: wrap;
     text-align: center;
+}
+
+.padder {
+    padding: 5%;
+    margin: 1%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(10%, 90%));
+    text-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.positioner {
+    text-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+.item {
+    size: 90%;
+    height: auto; /* Maintains aspect ratio */
+    width: auto; /* Adjusts dynamically */
+    object-fit: contain; /* Keeps the full image inside */
 }
 
 .link {
