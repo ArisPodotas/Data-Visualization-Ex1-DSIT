@@ -148,7 +148,7 @@ header{
 .float {
     position: fixed;
     z-index: 999;
-    background-color: var(--logow);
+    background-color: var(--offwhite);
     text-wrap: wrap;
     text-align: center;
     width: minmax(1%, 3.5%);
