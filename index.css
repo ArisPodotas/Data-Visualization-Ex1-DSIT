@@ -171,6 +171,10 @@ header{
     z-index: 1001;
 }
 
+.transparent {
+    opacity: 0;
+}
+
 .btn {
     background-color:var(--offwhite)
 }

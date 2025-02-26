@@ -12,16 +12,15 @@ window.addEventListener(
     }
 );
 
-window.addEventListener(
-    'hover', function() {
-        const item = document.getElementsByClassName('find')[0]; // [0] to select and element object from the list
-        // On hover
-        // condition = 
-        if (condigion) {
-            item.classList.remove('hidden');
-        } else {
-            item.classList.add('hidden'); 
-        }
-    }
-);
+document.addEventListener('DOMContentLoaded', function() {
+    const link = document.querySelector('.link'); // The element you hover over
+    const item = document.querySelector('.find'); // The hidden element
 
+    item.addEventListener('mouseenter', function() {
+        item.classList.remove('transparent'); // Show the element
+    });
+
+    item.addEventListener('mouseleave', function() {
+        item.classList.add('transparent'); // Hide the element
+    });
+});
