@@ -62,7 +62,7 @@ header{
 }
 
 .tab {
-    padding: 1vh;
+    padding: 1.3vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(1vh, 4vh));
@@ -83,7 +83,7 @@ header{
     padding: 5%;
     margin: 1%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fit, minmax(10%, 90%));
     text-wrap: wrap;
     text-align: center;
@@ -168,6 +168,7 @@ header{
 .hidden {
     opacity: 0;
     display: none;
+    z-index: 1001;
 }
 
 .btn {

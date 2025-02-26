@@ -12,3 +12,16 @@ window.addEventListener(
     }
 );
 
+window.addEventListener(
+    'hover', function() {
+        const item = document.getElementsByClassName('find')[0]; // [0] to select and element object from the list
+        // On hover
+        // condition = 
+        if (condigion) {
+            item.classList.remove('hidden');
+        } else {
+            item.classList.add('hidden'); 
+        }
+    }
+);
+
