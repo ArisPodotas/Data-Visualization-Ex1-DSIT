@@ -64,7 +64,7 @@ header{
 .tab {
     padding: 1.3vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(1vh, 4vh));
     text-align: center;
 }
