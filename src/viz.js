@@ -178,19 +178,21 @@ Zambia,0.00386901692479863,0.000948242439710413,0.00329631604536956,0.0017096529
 // finally got proper data in
 const data = d3.csvParse(file)
 
+// Preparing the document element
 const svg = d3.select('#viz')
     .append("svg")
     .attr("width", width)
     .attr("height", height);
 
+// Making the axis scalers, one linear and one per label
 const x = d3.scaleLinear()
     .domain([0, d3.max(data, d => +d.medoids)])
     .range([leftMargin, width - rightMargin]);
 const y = d3.scaleBand()
     .domain(data.map(function (d) { return d.country; }))
     .range([height - bottomMargin, topMargin]);
-// const x = d3.scaleLinear().domain([0, d3.max(data, d => +d.Exports)]).range([leftMargin, width - rightMargin]);
 
+// Putting the bars first for it to be on the lowest z index
 svg.selectAll(".bar")
     .data(data)
     .enter().append("rect")
@@ -201,6 +203,7 @@ svg.selectAll(".bar")
     .attr("width", function (d) { return x(d.medoids); })
     .attr('fill', '#98c379')
 
+// Drawring the axis
 xAxis = svg.append("g")
 xAxis.attr("transform", `translate(0, ${height - bottomMargin})`)
 xAxis.call(d3.axisBottom(x));
@@ -209,6 +212,7 @@ yAxis = svg.append("g")
 yAxis.attr("transform", `translate(${leftMargin}, 0)`)
 yAxis.call(d3.axisLeft(y));
 
+// Adding gridlines
 svg.selectAll("line.vertical-grid")
     .data(x.ticks(5))
     .enter()
